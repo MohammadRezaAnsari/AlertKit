@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "extensionkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MohammadRezaAnsari/ExtensionKit.git",
+      "state" : {
+        "revision" : "0208da1928dda57eb8888295744ecba963aed0cb",
+        "version" : "1.15.0"
+      }
+    },
+    {
+      "identity" : "swiftmessages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftKickMobile/SwiftMessages.git",
+      "state" : {
+        "revision" : "c2bcb351434ae044a486803ad1751b0e10f0d4e1",
+        "version" : "9.0.8"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -4,5 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "AlertKit"
+    name: "AlertKit",
+    platforms: [.iOS(.v12)],
+    products: [
+        .library(
+            name: "AlertKit",
+            targets: ["AlertKit"]
+        )
+    ],
+    dependencies: [
+        .package(url: "https://github.com/SwiftKickMobile/SwiftMessages.git", from: "9.0.4"),
+        .package(url: "https://github.com/MohammadRezaAnsari/ExtensionKit.git", from: "1.6.0"),
+    ],
+    targets: [
+        .target(
+            name: "AlertKit",
+            dependencies: [
+                "SwiftMessages",
+                "ExtensionKit"
+            ]
+        )
+    ]
 )
