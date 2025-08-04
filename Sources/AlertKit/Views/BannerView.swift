@@ -45,9 +45,6 @@ class BannerView: UIView, AlertViewConfigurable {
     }
     
     private let imageView = UIImageView() .. {
-        if #available(iOS 13.0, *) {
-            $0.layer.cornerCurve = .continuous
-        }
         $0.backgroundColor = .white
         $0.layer.cornerRadius = 8
         $0.contentMode = .center
@@ -131,6 +128,7 @@ class BannerView: UIView, AlertViewConfigurable {
         configuration.interactiveHide = isCancelable
         configuration.dimMode = .none
         configuration.presentationContext = .window(windowLevel: .statusBar)
+        if #available(iOS 13.0, *) { imageView.layer.cornerCurve = .continuous }
         setupView()
     }
     
